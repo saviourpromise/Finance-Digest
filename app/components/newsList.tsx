@@ -39,15 +39,15 @@ const NewsList = () => {
 
 
     return (
-        <div className="min-h-screen p-2 md:p-6 sm:p-12 dark:bg-black text-black dark:text-white">
-            <Image src="/blott-logo.png" width={200} height={50} alt="Blott" className="mx-auto mb-4" />
+        <div className="min-h-screen p-1 sm:p-12 dark:bg-black text-black dark:text-white">
+            <Image src="/blott-logo.png" width={200} height={50} alt="Blott" className="mx-auto my-4" />
             <hr className="block md:hidden remove mx-auto" />
-            <h1 className="text-2xl sm:text-5xl font-bold mb-8 text-left mt-4">NEWS</h1>
+            <h1 className="text-2xl sm:text-5xl font-bold mb-8 px-6 text-left mt-4">NEWS</h1>
 
             {loading ? (
-                <p className="text-left text-lg font-medium">Loading news...</p>
+                <p className="text-left text-lg px-6 font-medium">Loading news...</p>
             ) : error ? (
-                <p className="text-left text-lg font-medium">{error}</p>
+                <p className="text-left text-lg px-6 font-medium">{error}</p>
             ) : (
                 <div className="grid gap-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
                     {news.map((item) => (
@@ -56,7 +56,7 @@ const NewsList = () => {
                             href={item.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="rounded-lg overflow-hidden flex md:flex-col hover:bg-[#2A283E] p-4 transition duration-300"
+                            className="rounded-lg overflow-hidden flex md:flex-col hover:bg-[#2A283E] p-3 transition duration-300"
                         >
                             {item.image && (
                                 <Image
