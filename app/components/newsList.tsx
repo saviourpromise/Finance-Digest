@@ -39,7 +39,7 @@ const NewsList = () => {
 
 
     return (
-        <div className="min-h-screen p-6 sm:p-12 dark:bg-black text-black dark:text-white">
+        <div className="min-h-screen p-2 md:p-6 sm:p-12 dark:bg-black text-black dark:text-white">
             <Image src="/blott-logo.png" width={200} height={50} alt="Blott" className="mx-auto mb-4" />
             <hr className="block md:hidden remove mx-auto" />
             <h1 className="text-2xl sm:text-5xl font-bold mb-8 text-left mt-4">NEWS</h1>
