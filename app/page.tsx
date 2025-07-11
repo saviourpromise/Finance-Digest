@@ -1,6 +1,6 @@
 'use client';
 
-import NewsList from "@/app/components/newsList";
+import NewsList from "./components/newsList";
 
 export default function Home() {
   return (
